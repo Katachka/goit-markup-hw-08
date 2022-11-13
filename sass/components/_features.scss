@@ -1,9 +1,16 @@
 .features {
-    display: flex;
-    flex-basis: calc((100% - 90px) / 4);
-    gap: 30px;
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }   
 
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
 &__icon {
     display: flex;
@@ -26,5 +33,21 @@
 
 &__text {
     line-height: 1.7;
+    // додала до мобілки, в десктопі немає
 }
+&__item {
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+        }
+}    
+&__item:not(:last-child) {
+margin-bottom: 30px;
+} 
+
+@media screen and (min-width: 1200px) {
+            margin-bottom: 0px;
+        }
 }
