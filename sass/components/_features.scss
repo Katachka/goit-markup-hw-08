@@ -1,0 +1,30 @@
+.features {
+    display: flex;
+    flex-basis: calc((100% - 90px) / 4);
+    gap: 30px;
+
+
+
+&__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: var(--color-background-team);
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+}
+&__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+}
+
+&__text {
+    line-height: 1.7;
+}
+}

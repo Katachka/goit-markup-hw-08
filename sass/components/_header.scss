@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+&__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+
+    color: var(--color-black);
+}
+}
