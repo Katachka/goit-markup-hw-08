@@ -686,6 +686,7 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     gap: 165px;
+    margin-bottom: 60px;
   }
 }
 .footer__logo {
@@ -729,6 +730,11 @@ img {
   color: var(--color-white);
   margin-bottom: 20px;
   margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__subscribe {
