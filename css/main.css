@@ -362,8 +362,10 @@ img {
         flex-basis: calc((100% - 90px) / 4);
   }
 }
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .features {

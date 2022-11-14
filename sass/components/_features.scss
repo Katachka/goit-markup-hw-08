@@ -33,7 +33,7 @@
 
 &__text {
     line-height: 1.7;
-    // додала до мобілки, в десктопі немає
+    //  до мобілки маржин, в десктопі немає
 }
 &__item {
     @media screen and (min-width: 768px) {
@@ -42,10 +42,14 @@
     @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 90px) / 4);
         }
+&:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+    
+}
 }    
-&__item:not(:last-child) {
-margin-bottom: 30px;
-} 
+
 
 @media screen and (min-width: 1200px) {
             margin-bottom: 0px;
