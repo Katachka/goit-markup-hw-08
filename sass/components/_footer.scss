@@ -4,15 +4,15 @@
     text-align: center;
 @media screen and (min-width: 1200px) {
     text-align: left;
-}
+    }
 
 @media screen and (min-width: 1200px) {
 &__page {
     display: flex;
     align-items: baseline;
     gap: 70px;
-}
-}
+    }
+    }
  
  @media screen and (min-width: 768px) {
 &__flex {
@@ -21,6 +21,12 @@
     align-items: baseline;
     gap: 165px;
     margin-bottom: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+&__flex {
+    gap: 70px;
+    margin-bottom: 0;
 }
 }
 &__logo {
@@ -31,7 +37,7 @@
 &__item:not(:last-child) {
     margin-bottom: 8px;
 
-    @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     margin-bottom: 9px;
 }
 }

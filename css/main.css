@@ -689,6 +689,12 @@ img {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__flex {
+    gap: 70px;
+    margin-bottom: 0;
+  }
+}
 .footer__logo {
   margin-bottom: 20px;
   color: var(--color-white);
