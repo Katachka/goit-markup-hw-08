@@ -101,10 +101,18 @@ img {
 .header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
   color: var(--color-black);
 }
-
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
 .header__burger-menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -857,8 +865,8 @@ img {
   top: 50%;
   left: 50%;
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
@@ -869,6 +877,12 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 .modal__button-close {
   position: absolute;
@@ -975,9 +989,9 @@ img {
           appearance: none;
 }
 .modal__checkbox-label {
-  line-height: 1.7;
+  line-height: 1.16;
+  font-size: 12px;
   color: var(--color-primary);
-  padding-left: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -985,6 +999,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-label {
+    line-height: 1.7;
+    font-size: 14px;
+    padding-left: 14px;
+  }
 }
 .modal__terms-link {
   line-height: 1.7;
@@ -1036,7 +1057,6 @@ img {
   background-color: #188CE8;
 }
 
-.team,
-.backdrop {
+.team {
   display: none;
 }/*# sourceMappingURL=main.css.map */

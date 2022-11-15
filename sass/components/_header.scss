@@ -6,12 +6,18 @@
 &__logo {
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
+@media screen and (min-width: 768px) {
+    margin-right: 88px;
+    }
+@media screen and (min-width: 1200px) {
+     margin-right: 93px;
+    }
+   
 
     color: var(--color-black);
 }
-}
-.header__burger-menu {
+
+&__burger-menu {
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -22,4 +28,5 @@
     @media screen and (min-width: 768px) {
             display: none;
         }
+}
 }
