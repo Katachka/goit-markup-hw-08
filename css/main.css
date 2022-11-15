@@ -105,6 +105,22 @@ img {
   color: var(--color-black);
 }
 
+.header__burger-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: var(--color-secondary);
+}
+@media screen and (min-width: 768px) {
+  .header__burger-menu {
+    display: none;
+  }
+}
+
 .logo {
   display: block;
   font-family: "Raleway";
@@ -147,9 +163,14 @@ img {
   display: flex;
 }
 .site-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -186,12 +207,30 @@ img {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .contacts__link {
   display: -webkit-box;
@@ -200,8 +239,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
   color: var(--color-primary);
@@ -209,6 +246,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--color-accent);
@@ -307,6 +350,7 @@ img {
   gap: 12px;
   padding: 10px 28px 10px 31px;
   fill: var(--color-white);
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .button__subscribe {
@@ -389,7 +433,13 @@ img {
 }
 
 .work {
-  padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-top: 0;
+    display: block;
+  }
 }
 .work__list {
   display: -webkit-box;
@@ -986,8 +1036,6 @@ img {
   background-color: #188CE8;
 }
 
-.border-line,
-.work,
 .team,
 .backdrop {
   display: none;
