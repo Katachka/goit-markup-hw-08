@@ -1,17 +1,22 @@
 .team {
     background-color: var(--color-background-team);
 
+&__item:not(:last-child) {
+        margin-bottom: 30px;
+}
 
 &__list {
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
-        width: calc((100% - 300px) / 2);
+        margin-bottom: 0;
+        // width: calc((100% - 30px) / 2);
         }
     @media screen and (min-width: 1200px) {
-    display: flex;
+    
     flex-basis: calc((100% - 90px) / 4);
-    gap: 30px;
+   
 }
 }
 &__box {

@@ -80,7 +80,7 @@
       </section>
 
       <!-- features -->
-      <section class="section features--tmp">
+      <section class="section">
         <div class="container">
           <h2 class="section__title visually-hidden">Наші переваги</h2>
 
@@ -194,13 +194,34 @@
           <h2 class="section__title">Наша команда</h2>
 
           <ul class="team__list list">
-            <li>
-              <img
-                src="./images/man01.jpg"
-                alt="Молодий чоловік, шатен з борідкою в окулярах"
-                width="270"
-                height="260"
-              />
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/desc-demiyanenko-min.jpg    1x,
+                    ./images/desctop/desc-demiyanenko@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-demiyanenko-min.jpg    1x,
+                    ./images/tablet/tablet-demiyanenko@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-demiyanenko-min.jpg    1x,
+                    ./images/mobile/mobile-demiyanenko@2x-min.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./images/mobile/mobile-demiyanenko-min.jpg"
+                  alt="Молодий чоловік, шатен з борідкою в окулярах"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -238,13 +259,34 @@
               </div>
             </li>
 
-            <li>
-              <img
-                src="./images/woman02.jpg"
-                alt="Молода жінка, блондинка, в окулярах"
-                width="270"
-                height="260"
-              />
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/desc-repina-min.jpg    1x,
+                    ./images/desctop/desc-repina@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-repina-min.jpg    1x,
+                    ./images/tablet/tablet-repina@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-repina-min.jpg    1x,
+                    ./images/mobile/mobile-repina@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/mobile/mobile-repina-min.jpg"
+                  alt="Молода жінка, блондинка, в окулярах"
+                />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -282,8 +324,30 @@
               </div>
             </li>
 
-            <li>
-              <img src="./images/man03.jpg" alt="Молодий чоловік, шатен" width="270" height="260" />
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/desc-tarasov-min.jpg    1x,
+                    ./images/desctop/desc-tarasov@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-tarasov-min.jpg    1x,
+                    ./images/tablet/tablet-tarasov@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-tarasov-min.jpg    1x,
+                    ./images/mobile/mobile-tarasov@2x-min.jpg 2x
+                  "
+                />
+                <img src="./images/mobile/mobile-tarasov-min.jpg" alt="Молодий чоловік, шатен" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -321,13 +385,33 @@
               </div>
             </li>
 
-            <li>
-              <img
-                src="./images/man04.jpg"
-                alt="Молодий чоловік, брюнет з борідкою в окулярах"
-                width="270"
-                height="260"
-              />
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/desc-yermakov-min.jpg    1x,
+                    ./images/desctop/desc-yermakov@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/tablet-yermakov-min.jpg    1x,
+                    ./images/tablet/tablet-yermakov@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mobile-yermakov-min.jpg    1x,
+                    ./images/mobile/mobile-yermakov@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/mobile/mobile-yermakov-min.jpg"
+                  alt="Молодий чоловік, брюнет з борідкою в окулярах"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>

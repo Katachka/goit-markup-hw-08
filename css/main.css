@@ -507,23 +507,24 @@ img {
 .team {
   background-color: var(--color-background-team);
 }
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
-    width: calc((100% - 300px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
-    gap: 30px;
   }
 }
 .team__box {
