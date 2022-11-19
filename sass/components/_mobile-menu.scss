@@ -59,9 +59,7 @@ margin-bottom: 32px;
     display: flex;
     
 }
-&__item-socnet:not(:last-child) {
 
-}
 &__link-socnet {
     font-weight: 500;
     font-size: 18px;
@@ -69,8 +67,15 @@ margin-bottom: 32px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color:var(--color-accent);
-     border-right:  1px solid rgba(33, 33, 33, 0.2);
+    
+}
+&__vline { 
+    width: 22px;
+    height: 0px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 &__close-btn {

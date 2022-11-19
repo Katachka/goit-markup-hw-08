@@ -1173,9 +1173,15 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--color-accent);
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-menu__vline {
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .mobile-menu__close-btn {
   position: absolute;
