@@ -665,12 +665,14 @@
     </div>
     <!-- mobile menu -->
     <div class="mobile-menu js-menu-container">
+      <!-- кнопка -->
+      <button class="mobile-menu__close-btn js-close-menu" type="button">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-burger-close"></use>
+        </svg>
+      </button>
+      <!-- навігація блок -->
       <div>
-        <button class="mobile-menu__close-btn js-close-menu" type="button">
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#icon-burger-close"></use>
-          </svg>
-        </button>
         <ul class="mobile-menu__nav list">
           <li class="mobile-menu__item-nav">
             <a href="./index.html" class="mobile-menu__link-nav mobile-menu__link-nav--current"
@@ -684,6 +686,9 @@
             <a href="#" class="mobile-menu__link-nav">Контакти</a>
           </li>
         </ul>
+      </div>
+      <!-- контакти блок -->
+      <div>
         <ul class="mobile-menu__contacts list">
           <li class="mobile-menu__item-contacts">
             <a class="mobile-menu__link-tel" href="+380961111111">+38 096 111 11 11</a>
@@ -692,6 +697,7 @@
             <a class="mobile-menu__link-mail" href="info@devstudio.com">info@devstudio.com</a>
           </li>
         </ul>
+
         <ul class="mobile-menu__socnet list">
           <li>
             <a class="mobile-menu__link-socnet" href="#"
