@@ -1,19 +1,25 @@
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-basis: calc((100% - 60px) / 3);
+    // gap: 30px;
 
-    @media screen and (min-width: 768px) {
-        justify-content: flex-start;
-//  flex-basis: calc((100% - 30px) / 2);
-        }
-//      @media screen and (min-width: 1200px) {
-                     
-//     flex-basis: calc((100% - 60px) / 3);
-//     gap: 30px;
-// }
 
+&__item {
+@media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;}
+
+        width: calc((100% - 30px) / 2);
+    
+
+    @media screen and (min-width: 1200px) {
+
+        width: calc((100% - 60px) / 3);
+
+    }
+}
 &__card {
     text-decoration: none;
     background-color: var(--color-white);
@@ -24,8 +30,8 @@
 
 &__thumb {
     position: relative;
-    // width: 370px;
-    // height: 294px;
+    width: 370px;
+    height: 294px;
     overflow: hidden;
    
 
