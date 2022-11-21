@@ -731,6 +731,9 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
   }
 }
 @media screen and (min-width: 768px) {
