@@ -764,7 +764,6 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__thumb {
     width: 370px;
-    height: 404px;
   }
 }
 .portfolio__overlay {
